@@ -1,0 +1,53 @@
+.dragAndDropUpload {
+  padding: 16px;
+  border: 2px dashed var(--borderPrimaryColor);
+  border-radius: var(--borderLargeRadius);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 15px;
+  cursor: pointer;
+
+  user-select: 'auto';
+}
+
+.disabled {
+  cursor: no-drop;
+  user-select: none;
+  pointer-events: none;
+}
+
+.image {
+  height: 50px;
+  width: 50px;
+
+  &.imageDisabled {
+    opacity: 0.5;
+  }
+}
+
+.dragAndDropUploadText {
+  display: flex;
+  flex-direction: column;
+  min-height: 47px;
+  justify-content: space-between;
+}
+
+.uploadTitle {
+  color: var(--textLinkColor);
+  font-weight: bold;
+  font-size: 16px;
+
+  &.disabledText {
+    color: var(--textDisabledColor);
+  }
+}
+
+.acceptedFormats {
+  color: var(--textSubduedColor);
+  font-weight: 400;
+  font-size: 12px;
+  &.disabledText {
+    color: var(--textDisabledColor);
+  }
+}
