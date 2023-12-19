@@ -12,6 +12,7 @@ const MINTING_CONTRACT_ADDRESS_LIST: { [key in NetworkNames]: `0x${string}` } =
 export const networkName =
   process.env.NEXT_PUBLIC_NETWORK || NetworkNames.Goerli;
 
+export const JWT_AUTH_KEY = `Bearer ${process.env.PINATA_API_KEY}`;
 export const MINTING_CONTRACT_ADDRESS =
   MINTING_CONTRACT_ADDRESS_LIST[networkName as NetworkNames];
 export const INFURA_API_KEY = process.env.INFURA_API_KEY as string;

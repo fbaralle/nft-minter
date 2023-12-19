@@ -1,3 +1,4 @@
+import { JWT_AUTH_KEY } from "@/config";
 import axios from "axios";
 import { NextRequest } from "next/server";
 
@@ -6,8 +7,6 @@ export const config = {
     bodyParser: false,
   },
 };
-
-const JWT_AUTH = `Bearer ${process.env.PINATA_API_KEY}`;
 
 const pinFileToIPFS = async (parsedFormData: FormData) => {
   const name = parsedFormData.get("name");
@@ -30,7 +29,7 @@ const pinFileToIPFS = async (parsedFormData: FormData) => {
     {
       maxBodyLength: Infinity,
       headers: {
-        Authorization: JWT_AUTH,
+        Authorization: JWT_AUTH_KEY,
       },
     }
   );
@@ -68,7 +67,7 @@ const pinMetadataToIpfs = async (
     assetMetadata,
     {
       headers: {
-        Authorization: JWT_AUTH,
+        Authorization: JWT_AUTH_KEY,
       },
     }
   );

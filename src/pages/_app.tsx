@@ -7,7 +7,6 @@ import { ThemeProvider } from "next-themes";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
 import { WagmiConfig } from "wagmi";
-import WalletProvider from "@/context/wallet-data.provider";
 import { createWagmiWeb3Modal, config } from "@/config/wagmi-config";
 
 const queryClient = new QueryClient();
