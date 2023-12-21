@@ -78,7 +78,7 @@ const Text: React.FunctionComponent<TextProps<ElementKeys>> = forwardRef(
   ({ as = "span", children, variant, fontSize, className, ...props }, ref) => {
     const elementProps = {
       className: twMerge(
-        classNames(baseStyle, textDefaultStyles[as], {
+        classNames(baseStyle, textDefaultStyles[as as TextStyles], {
           [textDefaultStyles[variant as TextStyles]]: !!variant,
           [`text-${fontSize}`]: !!fontSize,
         }),

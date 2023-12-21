@@ -2,12 +2,6 @@ import { JWT_AUTH_KEY } from "@/config";
 import axios from "axios";
 import { NextRequest } from "next/server";
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
-
 const pinFileToIPFS = async (parsedFormData: FormData) => {
   const name = parsedFormData.get("name");
   const file = parsedFormData.get("file");

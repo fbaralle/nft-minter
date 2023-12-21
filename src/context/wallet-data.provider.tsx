@@ -33,7 +33,10 @@ const WalletProvider: React.FC<{ children: ReactNode; [key: string]: any }> = ({
     balance: 0,
   });
 
-  const { data: chainStats, isLoading: isLoadingChainStats } = useQuery<any[]>({
+  const { data: chainStats, isLoading: isLoadingChainStats } = useQuery<
+    Record<string, string>[]
+  >({
+    // @ts-ignore
     queryKey: ["network-data", hasMetamask],
     queryFn: getNetworkData,
     staleTime: 1000, // 1 min

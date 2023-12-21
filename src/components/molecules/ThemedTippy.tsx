@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 import React, { ReactElement } from "react";
 
 interface ThemedTippyProps extends React.ComponentProps<typeof Tippy> {
-  children;
+  children: any;
   content: string | ReactElement;
   className?: string;
   placement?: any;

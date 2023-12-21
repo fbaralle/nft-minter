@@ -10,9 +10,7 @@ interface FileDropzoneProps {
   name?: string;
   types?: string[];
   value?: File;
-  // eslint-disable-next-line unused-imports/no-unused-vars
   onDrop?: (file: File) => void;
-  // eslint-disable-next-line unused-imports/no-unused-vars
   handleChange: (file: File) => void;
   disabled?: boolean;
   classes?: {
