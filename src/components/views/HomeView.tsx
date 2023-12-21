@@ -3,19 +3,7 @@ import HeaderMenu from "@/components/molecules/HeaderMenu";
 import NewNFTModal from "../molecules/NewNFTModal";
 import MintNewButton from "../molecules/MintNewButton";
 
-import { useAccount, useBalance, useContractRead } from "wagmi";
-import { MINTING_CONTRACT_ADDRESS } from "@/config";
-import mintContractAbi from "@/config/mint-contract.abi.json";
-
 const HomeView = () => {
-  const { data, isError, isLoading } = useContractRead({
-    address: MINTING_CONTRACT_ADDRESS,
-    abi: mintContractAbi.abi,
-    functionName: "mint",
-  });
-
-  console.log("balance", data);
-
   return (
     <main className="flex min-h-screen flex-col items-center pb-20 px-[10%] home-gradient py-12">
       <HeaderMenu />
