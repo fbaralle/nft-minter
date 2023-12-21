@@ -41,8 +41,9 @@ const MAX_FILE_SIZE_MB = 3;
 
 const NewNFTModal = () => {
   const { isConnected } = useAccount();
-  const { modalOpen, modalStep, setModalOpen, setModalStep, closeModal } =
-    useStore((state) => state.modal);
+  const { modalOpen, modalStep, setModalOpen, closeModal } = useStore(
+    (state) => state.modal
+  );
 
   const onClose = () => {
     setModalOpen(false);

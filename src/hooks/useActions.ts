@@ -20,8 +20,7 @@ const useActions = ({
   attributes: unknown[];
   disabled: boolean;
 }) => {
-  const { modalOpen, modalStep, setModalOpen, setModalStep, closeModal } =
-    useStore((state) => state.modal);
+  const { modalOpen, setModalStep } = useStore((state) => state.modal);
   const [isUploadingFile, setIsUploadingFile] = useState<boolean>(false);
   const [uploadFileError, setUploadFileError] = useState<any>(false);
   const [fileMetadata, setFileMetadata] = useState<FileUploaded | undefined>(

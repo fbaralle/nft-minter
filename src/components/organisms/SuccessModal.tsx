@@ -14,7 +14,7 @@ interface SuccessModalProps {
 }
 
 const SuccessTxModal: React.FC<SuccessModalProps> = ({
-  txHash = "0xbd252939258eecb008636752502f19f9e55ad6025822e4d56f0013f33828be97",
+  txHash,
   ipfsSource,
 }) => {
   const { chain } = useNetwork();
