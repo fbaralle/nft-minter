@@ -2,20 +2,7 @@ import { useUserWallet } from "@/context/wallet-data.context";
 import { Button } from "../atoms/Button";
 import Text from "../atoms/Text";
 import { truncateString } from "@/utils";
-import { BigNumber, ethers } from "ethers";
-
-import { useAccount, useConnect, useEnsName } from "wagmi";
-import { InjectedConnector } from "wagmi/connectors/injected";
-
-export const Profile = () => {
-  // const { address, isConnected } = useAccount();
-  // const { data: ensName } = useEnsName({ address });
-  // const { connect } = useConnect({
-  //   connector: new InjectedConnector(),
-  // });
-  // if (isConnected) return <div>Connected to {ensName ?? address}</div>;
-  // return <button onClick={() => connect()}>Connect Wallet</button>;
-};
+import { ethers } from "ethers";
 
 const ConnectWalletButton = () => {
   const {

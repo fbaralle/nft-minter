@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 import axios from "axios";
 import { IFPS_EXPLORER_URL, PINATA_GATEWAY_BASE_URL } from "@/config";
 import useMint from "@/hooks/useMint";
-import { FileUploaded } from "@/components/molecules/NewNFTModal";
+import { FileUploaded } from "@/components/organisms/NewNFTModal";
 import useStore from "@/store/useStore";
 import { ProposalModalSteps } from "@/store/createModalSlice";
 

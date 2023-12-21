@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Modal } from "@/components/atoms/Modal";
 import useStore from "@/store/useStore";
-import { ModalButtons } from "@/components/molecules/ModalButtons";
+import { ModalButtons } from "@/components/organisms/ModalButtons";
 import Text from "@/components/atoms/Text";
 import FormGroup from "../atoms/Input/FormGroup";
 import Label from "../atoms/Input/Label";
 import FormInput from "../atoms/Input/FormInput";
 import { ProposalModalSteps } from "@/store/createModalSlice";
 import SuccessTxModal from "./SuccessModal";
-import FileDropzone from "../organisms/FileDropzone";
+import FileDropzone from "../molecules/FileDropzone";
 import { useAccount } from "wagmi";
 import InProgressModal from "./InProgressModal";
 import useActions from "@/hooks/useActions";

@@ -5,12 +5,11 @@ import classNames from "classnames";
 import { useWeb3Modal } from "@web3modal/wagmi/react";
 
 const MintNewButton = () => {
-  // const { userAddress } = useUserWallet();
   const { isConnected } = useAccount();
   const { setModalOpen } = useStore((state) => state.modal);
   const { open } = useWeb3Modal();
-
   const onClick = () => (isConnected ? setModalOpen(true) : open());
+
   return (
     <Button
       onClick={onClick}

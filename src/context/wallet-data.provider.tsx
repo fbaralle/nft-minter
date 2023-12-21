@@ -89,6 +89,7 @@ const WalletProvider: React.FC<{ children: ReactNode; [key: string]: any }> = ({
         const balance = await publicClient.getBalance({
           address,
         });
+
         setSelectedWalletData({
           client,
           publicClient,

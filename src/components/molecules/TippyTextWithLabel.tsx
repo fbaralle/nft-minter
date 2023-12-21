@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import { twMerge } from "tailwind-merge";
 
-import ThemedTippy from "@/components/organisms/ThemedTippy";
+import ThemedTippy from "@/components/molecules/ThemedTippy";
 import Text from "../atoms/Text";
 
 export const tippyTextWithLabelClassName = classNames(

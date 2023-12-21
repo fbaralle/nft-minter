@@ -9,6 +9,12 @@ const MINTING_CONTRACT_ADDRESS_LIST: { [key in NetworkNames]: `0x${string}` } =
     [NetworkNames.Mainnet]: "0x",
   };
 
+export const JSON_RPC_PROVIDER_URL = {
+  // Testnet blockchains
+  goerli: process.env.INFURA_GOERLI_RPC_URL as string,
+  mainnet: process.env.INFURA_MAINNET_RPC_URL as string,
+};
+
 export const networkName =
   process.env.NEXT_PUBLIC_NETWORK || NetworkNames.Goerli;
 

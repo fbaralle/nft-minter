@@ -1,7 +1,7 @@
 import Text from "@/components/atoms/Text";
-import HeaderMenu from "@/components/molecules/HeaderMenu";
-import NewNFTModal from "../molecules/NewNFTModal";
-import MintNewButton from "../molecules/MintNewButton";
+import HeaderMenu from "@/components/organisms/HeaderMenu";
+import NewNFTModal from "../organisms/NewNFTModal";
+import MintNewButton from "../organisms/MintNewButton";
 
 const HomeView = () => {
   return (
